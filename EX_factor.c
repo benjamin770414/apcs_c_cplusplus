@@ -6,9 +6,11 @@
 
 int main()
 {
-    int n;
+    int n = 60;
+    /*
     printf("請輸入一個正整數: ");
     scanf("%d", &n);
+    */    
     printf(" %d 的因數有: ", n);
     int i;
     for(i=1; i<=n; i++){
