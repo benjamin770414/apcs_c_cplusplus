@@ -1,13 +1,22 @@
 #include <stdio.h>
 
 int main(void){
-    int i,n=60;
-    // long pow2=1;
-    long pow2= 1152921504606846976;
-    for(i=0;i<n;i++){
-        // pow2 =  pow2 * 2;
-        pow2 =  pow2 / 2;
+    int i,j,n=1000000000,m=2;
+    double pow2[m];
+    //long pow2= 1152921504606846976;
+    for(i=0;i<m;i++){
+        pow2[i]=1;
+        //printf("%d ",pow2[i]);
     }
-    printf("2 pow %d = %ld \n",n,pow2);
+    for(j=0;j<m;j++){
+        for(i=0;i<n;i++){            
+            pow2[j] =  pow2[j] * 2;
+            //pow2 =  pow2 / 2;
+        }
+    }
+    for(i=0;i<m;i++){
+        printf("2_pow %d = %f \n",n,pow2[i]);
+    }
+    
     return 0;
 }
